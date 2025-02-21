@@ -5,8 +5,8 @@ def convert_usd_to_eth(usd_value):
     try:
         usd = float(usd_value)
         eth = usd / CONVERSION_RATE
-        # Format the result to 6 decimal places for clarity
-        return f"{eth:.6f}"
+        # Format the result to 4 decimal places for clarity
+        return f"{eth:.4f}"
     except ValueError:
         # If conversion fails, return the original string
         return usd_value
